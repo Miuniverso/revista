@@ -1,26 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Revista</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="http://allfont.ru/allfont.css?fonts=playfair-display-black-italic" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
     <nav>
-      <a href="" class="burger"></a>
-      <div class="logo"></div>
+      <a href="#" class="burger">
+          <svg
+           xmlns="http://www.w3.org/2000/svg"
+           xmlns:xlink="http://www.w3.org/1999/xlink"
+           width="44px" height="3px">
+          <path fill-rule="evenodd"  fill="rgb(34, 34, 34)"
+           d="M0.500,2.500 L0.500,0.499 L43.500,0.499 L43.500,2.500 L0.500,2.500 Z"/>
+          </svg>
+          <svg
+           xmlns="http://www.w3.org/2000/svg"
+           xmlns:xlink="http://www.w3.org/1999/xlink"
+           width="44px" height="3px">
+          <path fill-rule="evenodd"  fill="rgb(34, 34, 34)"
+           d="M0.500,2.500 L0.500,0.499 L43.500,0.499 L43.500,2.500 L0.500,2.500 Z"/>
+          </svg>
+          <svg
+           xmlns="http://www.w3.org/2000/svg"
+           xmlns:xlink="http://www.w3.org/1999/xlink"
+           width="44px" height="3px">
+          <path fill-rule="evenodd"  fill="rgb(34, 34, 34)"
+           d="M0.500,2.500 L0.500,0.499 L43.500,0.499 L43.500,2.500 L0.500,2.500 Z"/>
+          </svg>
+      </a>
+      <div class="logo">
+        <svg class="logo-image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33" height="34" viewBox="0 0 33 34">
+          <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+        <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+           <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about=""/>
+           </rdf:RDF>
+        </x:xmpmeta>
+        <?xpacket end="w"?></metadata>
+        <image id="Icon" width="33" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAQAAAD8mq+EAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBAMRHQxQDyPSAAACpklEQVQ4y43UT0gUURzA8e97486M7ebsoK4hQuteAiHWQIK96clrHiL3pEFQdqlbZ6FDhy5dsltHkTx4ERIC7SR6yRAkL7XRpqwp7Ijr/p03HfaPq85Yv7kM85vP/Hi/95snEviEaN15gTlPXkjcU4vqB6p5qUN3lemzT6mtVi4m2qpOq9fljhNLYpzoNQBXlKwK4ZNIRL2Tz6iAOqxprti3bOzZJh1Vi6dGMWI7ssYHuUEGgCjDasrrKYSgy2CCJVBz5XTOsppUzdUmD6I3HPlJvmTr0uri6oV8kqPL0b+Ib+V01bzu5U17ViR0d6U4okKRfTnhw5oRcxcqd6pmqFQ1w+vCdpL2rEg8P351aCSgjwOuCl1t5pJVBo5kP1Ge8lYkdLWr7D1r4EgOXYF1d6WQglCpakbeyxkASUUOyvleJ9utdohdDcPrxjzUJhkFaHRYzZXTf4Iqt6A2Dmp3L96fkYPQGAk5YwRVbocVKvJhLH/aw3SLBuLzEGCtI1+IuFNt1BdfhoB801mWKaLnZvgC9oXAUrhaKjF6YfzbcQCEjOwoWQxf/HNamFwABLzd+r7ij78TBFvvBSU6+Vf4UDVXTlfNvq+hUiHlrqD/HxWIOgyvy7vGfAAWMqmVyZ/RuFdEoepQG6ciZwJwsuaYRbaaNO5u/zIr+aJzbJ01xx+rx44VMlmTTfg7MnCkTxgZHe1z2+T44fsKb7m+1ri7nY3UyHazKm75bVWoVEipzcZ4Tp8atiNfgkjgrmqjAD+JOQfWwIl2u3Gonet53uo7kkNALkfPmjYGErQxJJLZLvxhvXLUyXarHXchR6ysPQDoAFpnvD9sYHrT2e5oqsvx5sUBgGY3sxn9URAEEMvaTXdEc699lFONJ22nfzwYAhBTG17mbKr/Ak5VX6GcOTDAAAAAAElFTkSuQmCC"/>
+        </svg>
+        Revista
+      </div>
       <ul class="social-links">
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>
+          <a class="social-link" href=""><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a class="social-link" href=""><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a class="social-link" href=""><i class="fab fa-instagram"></i></a>
+        </li>
       </ul>
     </nav>
   </header>
   <main>
-    <section class="intro"></section>
-    <section class="most-popular"></section>
-    <section class="subscribe"></section>
-    <section class="news">
+    <section class="intro">
+      <h1 class="visually-hidden">Презентация</h1>
+      <div class="intro-wrapper">
+        <svg class="intro-line"
+         xmlns="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         width="130px" height="3px">
+        <path fill-rule="evenodd"  fill="rgb(34, 34, 34)"
+         d="M0.500,2.434 L0.500,0.434 L129.500,0.434 L129.500,2.434 L0.500,2.434 Z"/>
+        </svg>
+        <div class="intro-wrapper-text">
+          <h2 class="intro-text-max">Let’s do another one everywhere</h2>
+          <b class="intro-text-min">( Celebgram interview)</b>
+        </div>
+      </div>
+      <address class="intro-info">
+      <b class="number">+123 4567 8910</b>
+      <b class="email">hi@revista.com</b>
+    </address>
+    <b class="intro-bg-year">2017</b>
+    <b class="intro-bg-number">3</b>
+    <a href="" class="btn-follow"><i class="fab fa-instagram"></i> Follow us</a>
+    <h3 class="intro-big-title">Pop Culture
+           Phenomenon</h3>
+    <div class="intro-images">
+      <img src="img/intro-one.jpg" alt="" width="534px" height="594px" class="intro-image">
+      <img src="img/intro-two.jpg" alt="" width="534px" height="594px" class="intro-image">
+      <img src="img/intro-three.jpg" alt="" width="534px" height="594px" class="intro-image">
+      <img src="img/intro-four.jpg" alt="" width="534px" height="594px" class="intro-image">
+    </div>
+    </section>
+    <section class="most-popular">
+      <svg class="line-vertical"
+       xmlns="http://www.w3.org/2000/svg"
+       xmlns:xlink="http://www.w3.org/1999/xlink"
+       width="4px" height="71px">
+      <path fill-rule="evenodd"  fill="rgb(34, 34, 34)"
+       d="M1.277,0.934 L3.277,0.942 L2.729,129.941 L0.729,129.933 L1.277,0.934 Z"/>
+      </svg>
+      <h1 class="most-popular-title">Most Popular</h1>
+      <b class="most-popular-title-small">I really love to tell about</b>
+      <div class="popular-image-wrapper">
+        <figure class="popular-image image-one">
+          <img src="img/popular-one.jpg" alt="" width="672px" height="741px">
+          <figcaption>Look, there’s a rhythmic thing</figcaption>
+        </figure>
+        <p class="author">David Warner<span class="photo-title">Lifestyle</span></p>
+        <figure class="popular-image image-two">
+          <img src="img/popular-two.jpg" alt="" width="479px" height="556px">
+          <figcaption>What more can you wish</figcaption>
+        </figure>
+        <p class="author">Luis Garcia<span class="photo-title">Passion</span></p>
+      </div>
+      <div class="popular-image-wrapper">
+        <figure class="popular-image image-three">
+          <img src="img/popular-three.jpg" alt="" width="479px" height="556px">
+          <figcaption>Cool with duplicates</figcaption>
+        </figure>
+        <p class="author">Adam Rose<span class="photo-title">Passion</span></p>
+        <figure class="popular-image image-four">
+          <img src="img/popular-four.jpg" alt="" width="671px" height="741px">
+          <figcaption>He never stood up to that thing</figcaption>
+        </figure>
+        <p class="author">James Falulkner<span class="photo-title">Lifestyle</span></p>
+      </div>
+    </section>
+    <section class="subscribe">
+      <h1>Subscribe Our Newsletter</h1>
+      <p>Leverage agile frameworks to provide a robust synopsis for high level overviews.</p>
+      <form class="" action="index.html" method="post">
+
+      </form>
+    </section>
+    <!-- <section class="news">
       <ul class="news">
         <li></li>
         <li></li>
@@ -28,10 +144,10 @@
       </ul>
     </section>
     <article class="">
-    </article>
+    </article> -->
   </main>
   <footer>
-    <ul class="footer-links">
+    <!-- <ul class="footer-links">
       <li></li>
       <li></li>
       <li></li>
@@ -49,7 +165,7 @@
       <li></li>
       <li></li>
       <li></li>
-    </ul>
+    </ul> -->
   </footer>
 
 </body>
