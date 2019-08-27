@@ -214,11 +214,11 @@ nav {
   color: rgb(237, 237, 237);
   text-transform: uppercase;
   line-height: 34px;
-  font-weight: 600;
+  font-weight: 700;
 
   position: absolute;
   top: 423px;
-  right: -261px;
+  right: -246px;
 }
 
 .btn-follow {
@@ -233,7 +233,7 @@ nav {
   line-height: 24px;
   letter-spacing: 3px;
 
-  padding: 12px 39px;
+  padding: 14px 41px;
 
   border-style: solid;
   border-color: rgb(149, 202, 197);
@@ -261,7 +261,7 @@ nav {
 
 .most-popular {
   text-align: center;
-  padding-bottom: 110px;
+  padding-bottom: 108px;
 }
 
 .most-popular-title {
@@ -390,7 +390,9 @@ nav {
 .subscribe-wrapper {
   text-align: center;
   background: url("../img/subscribe-background.jpg") center no-repeat;
-  padding-bottom: 124px;
+
+  max-height: 363px;
+  padding: 106px 0;
 }
 
 .subscribe-wrapper h1 {
@@ -400,7 +402,6 @@ nav {
   font-weight: bold;
   text-transform: uppercase;
   margin: 0;
-  padding-top: 120px;
   padding-bottom: 11px;
 }
 
@@ -426,7 +427,7 @@ nav {
 
 .subscribe {
   font-size: 16px;
-  font-family: "Myriad Pro";
+  font-family: "Myriad Pro Regular";
   color: rgb(119, 119, 119);
   background-color: rgb(255, 255, 255);
   line-height: 30px;
@@ -444,9 +445,103 @@ nav {
   width: 66px;
   height: 56px;
   top: 31px;
-  right: 0px;
+  right: -1px;
 }
 
 .news {
   text-align: center;
+}
+
+.news h1 {
+  font-size: 30px;
+  font-family: "Montserrat";
+  color: rgb(34, 34, 34);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 24px;
+
+  padding-top: 49px;
+}
+
+.news-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  width: 1230px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 40px;
+}
+
+.news-wrapper {
+  text-align: left;
+
+  width: 367px;
+
+  /* background-color: rgb(244, 244, 244); */
+  box-shadow: 0px 5px 21px 0px rgba(0, 0, 0, 0.04);
+  border-radius: 12px;
+}
+
+.news-one {
+  display: flex;
+  flex-direction: column;
+
+  background: url("../img/new-one.jpg") rgb(244, 244, 244) center top no-repeat;
+  min-height: 488px;
+}
+
+.news-two {
+  display: flex;
+  flex-direction: column;
+
+  background: url("../img/new-two.jpg") rgb(244, 244, 244) center top no-repeat;
+  min-height: 488px;
+}
+
+.news-three {
+  display: flex;
+  flex-direction: column;
+
+  background: url("../img/new-three.jpg") rgb(244, 244, 244) center top no-repeat;
+  min-height: 488px;
+}
+
+.news-wrapper h2 {
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: rgb(34, 34, 34);
+  line-height: 32px;
+}
+
+.news-text {
+  margin-top: auto;
+  padding: 34px 32px;
+}
+
+.news-text p {
+  font-family: 'Hind', sans-serif;
+  line-height: 26px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #777777;
+}
+
+.link-view {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 7px;
+
+  font-family: "Montserrat";
+  color: black;
+}
+
+.link-view i {
+  padding-left: 33px;
+}
+
+.pad {
+  margin-top: 150px;
 }
